@@ -216,7 +216,7 @@ const PortfolioSection = () => {
                               <div 
                                 className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-500"
                                 style={{
-                                  background: 'linear-gradient(45deg, #ec4899, #db2777, #f472b6, #ec4899)',
+                                  background: 'linear-gradient(45deg, #ec4899, #f472b6, #ec4899)',
                                   backgroundSize: '300% 300%',
                                   animation: 'gradient-shift 3s ease infinite',
                                   borderRadius: '50%'
