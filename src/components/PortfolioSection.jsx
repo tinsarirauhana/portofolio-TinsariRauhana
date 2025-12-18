@@ -226,9 +226,19 @@ const PortfolioSection = () => {
                                 src={tool.logo} 
                                 alt={tool.name}
                                 className="w-12 h-12 object-contain relative z-10 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6"
-                                style={{ 
-                                  filter: 'brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(1501%) hue-rotate(300deg) brightness(100%) contrast(94%)',
-                                }}
+                                style={{
+  filter: `
+    brightness(0)
+    saturate(100%)
+    invert(45%)
+    sepia(90%)
+    saturate(1200%)
+    hue-rotate(305deg)
+    brightness(105%)
+    contrast(100%)
+  `
+}}
+
                               />
                               <style>{`
                                 @keyframes gradient-shift {
@@ -239,13 +249,16 @@ const PortfolioSection = () => {
                                   animation: logo-glow 2.5s ease-in-out infinite;
                                 }
                                 @keyframes logo-glow {
-                                  0%, 100% {
-                                    filter: brightness(0) saturate(100%) invert(56%) sepia(89%) saturate(1501%) hue-rotate(300deg) brightness(100%) contrast(94%);
-                                  }
-                                  50% {
-                                    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2476%) hue-rotate(314deg) brightness(118%) contrast(92%);
-                                  }
-                                }
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
                               `}</style>
                             </>
                           ) : (
