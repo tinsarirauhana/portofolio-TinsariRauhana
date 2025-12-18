@@ -121,7 +121,7 @@ const tools = [
   name: "Weka",
   category: "Tools",
   level: 80,
-  logo: "/public/weka.png"
+  logo: "/weka.svg"
 },
 
   { 
