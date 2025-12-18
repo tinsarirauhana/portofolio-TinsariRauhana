@@ -25,8 +25,8 @@ const About = () => {
                   handle="tinsarirauhanaa"
                   status="Open to Work"
                   contactText="Hire Me"
-                  avatarUrl="/src/assets/profile/avatar.jpg"
-                  miniAvatarUrl="/src/assets/profile/mini-avatar.jpg"
+                  avatarUrl="/profile/avatar.JPG"
+                  miniAvatarUrl="/profile/mini-avatar.jpg"
                   behindGlowEnabled={true}
                   behindGlowColor="rgba(236, 72, 153, 0.7)"
                   behindGlowSize="60%"
