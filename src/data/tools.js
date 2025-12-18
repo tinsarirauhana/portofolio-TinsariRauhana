@@ -34,7 +34,7 @@ const tools = [
     name: "java", 
     category: "Programming Languages", 
     level: 75,
-    logo: "https://api.iconify.design/devicon/java.svg?color=%23ec4899"
+    logo: "/2.png"
   },
   
   // Data Analysis & ML
@@ -48,7 +48,7 @@ const tools = [
     name: "Pandas", 
     category: "Data Analysis & ML", 
     level: 90,
-    logo: "https://api.iconify.design/devicon/pandas.svg?color=%23ec4899"
+    logo: "/3.png"
   },
   { 
     name: "NumPy", 
@@ -121,14 +121,14 @@ const tools = [
   name: "Weka",
   category: "Tools",
   level: 80,
-  logo: "/weka.svg"
+  logo: "/1.png"
 },
 
   { 
     name: "Excel", 
     category: "Tools", 
     level: 80,
-    logo: "/excel.svg"
+    logo: "/4.png"
   }
 ];
 
