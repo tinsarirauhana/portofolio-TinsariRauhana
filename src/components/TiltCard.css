@@ -1,0 +1,108 @@
+.magic-tilt-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Border Glow Effect - Ngikutin mouse */
+.magic-border-glow {
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    rgba(236, 72, 153, calc(var(--glow-intensity) * 1)) 0%,
+    rgba(236, 72, 153, calc(var(--glow-intensity) * 0.6)) 30%,
+    transparent 60%
+  );
+  border-radius: 16px; /* Sesuai rounded-2xl */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.magic-tilt-wrapper:hover .magic-border-glow {
+  opacity: 1;
+}
+
+/* Static Border - Selalu keliatan */
+.magic-tilt-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px; /* Sesuai rounded-2xl */
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.35), rgba(219, 39, 119, 0.35));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.magic-tilt-wrapper:hover::before {
+  opacity: 0.6;
+}
+
+/* Content wrapper */
+.magic-card-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* Particle styling */
+.magic-particle {
+  animation: float 3s ease-in-out infinite;
+}
+
+.magic-particle::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: rgba(236, 72, 153, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Extra glow on hover */
+.magic-tilt-card:hover {
+  box-shadow: 
+    0 4px 20px rgba(236, 72, 153, 0.2),
+    0 0 30px rgba(236, 72, 153, 0.1);
+}
+
+/* Ensure all children respect border radius */
+.magic-card-content > * {
+  border-radius: inherit;
+}
