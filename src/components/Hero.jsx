@@ -35,8 +35,8 @@ const Hero = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/cv/Tinsari_Rauhana_CV.pdf';
-    link.download = 'Tinsari_Rauhana_CV.pdf';
+    link.href = '/cv/TinsariRauhana-CV.pdf';
+    link.download = 'TinsariRauhana-CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
