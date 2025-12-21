@@ -288,7 +288,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;  /* ← TAMBAH INI! */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -301,8 +300,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  flex: 1;         /* ← TAMBAH INI! */
-  min-width: 0;    /* ← TAMBAH INI! */
 }
 
 .pc-mini-avatar {
@@ -326,8 +323,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 6px;
-  overflow: hidden;     /* ← TAMBAH INI! */
-  min-width: 0;         /* ← TAMBAH INI! */
 }
 
 .pc-handle {
@@ -335,18 +330,12 @@
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .pc-status {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .pc-contact-btn {
@@ -359,9 +348,6 @@
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
-  white-space: nowrap;
-  flex-shrink: 0;
-  min-width: fit-content;  /* ← PENTING! */
 }
 
 .pc-contact-btn:hover {
@@ -445,12 +431,10 @@
   }
 }
 
-/* Mobile (768px) */
 @media (max-width: 768px) {
-  .pc-user-info {
-    --ui-inset: 15px;
-    padding: 10px 12px;
-    gap: 6px;
+  .pc-card {
+    height: 70svh;
+    max-height: 450px;
   }
 
   .pc-details {
@@ -493,12 +477,10 @@
   }
 }
 
-/* Small Mobile (480px) */
 @media (max-width: 480px) {
-  .pc-user-info {
-    --ui-inset: 12px;
-    padding: 8px 10px;
-    gap: 4px;
+  .pc-card {
+    height: 60svh;
+    max-height: 380px;
   }
 
   .pc-details {
@@ -537,17 +519,16 @@
   }
 
   .pc-contact-btn {
-    padding: 6px 10px;
-    font-size: 9px;
+    padding: 5px 10px;
+    font-size: 10px;
     border-radius: 50px;
   }
 }
 
-/* 320px */
 @media (max-width: 320px) {
-  .pc-user-info {
-    padding: 6px 8px;
-    gap: 3px;
+  .pc-card {
+    height: 55svh;
+    max-height: 320px;
   }
 
   .pc-details h3 {
@@ -580,8 +561,8 @@
   }
 
   .pc-contact-btn {
-    padding: 5px 8px;
-    font-size: 8px;
+    padding: 4px 8px;
+    font-size: 9px;
     border-radius: 50px;
   }
 }
@@ -663,21 +644,19 @@
 #about .pc-contact-btn {
   padding: 10px 14px;
   font-size: 11px;
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
-  #about .pc-contact-btn {
-    padding: 6px 10px;
-    font-size: 9px;
+@media (max-width: 1024px) {
+  #about .pc-card {
+    height: 55svh;
+    max-height: 450px;
   }
 }
 
-@media (max-width: 480px) {
-  #about .pc-contact-btn {
-    padding: 5px 8px;
-    font-size: 8px;
+@media (max-width: 768px) {
+  #about .pc-card {
+    height: 50svh;
+    max-height: 400px;
   }
 }
 
