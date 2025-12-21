@@ -44,7 +44,7 @@ const About = () => {
             {/* Stats Grid 2x2 */}
             <div className="w-full space-y-3">
               <FadeInView delay={0.2} direction="left">
-                <div className="grid grid-cols-2 sm:gap-4">
+                <div className="grid grid-cols-2 gap-3">
                   <div className="bg-gradient-to-br from-pink-500/10 to-pink-600/5 backdrop-blur-sm rounded-xl p-4 border border-pink-500/20 text-center">
                     <div className="text-3xl font-bold text-pink-400 mb-1">1+</div>
                     <div className="text-gray-400 text-xs">Years Experience</div>
