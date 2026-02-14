@@ -13,7 +13,7 @@ const projects = [
   fullDescription: "Collaborated in a team to build a search engine using React. My role: Designed and implemented the complete backend system including text preprocessing (tokenization, stopword removal, stemming with Sastrawi), inverted indexing, and search algorithms (TF-IDF Vector Space Model and Jaccard Similarity). Developed evaluation metrics (Precision, Recall, F1-Score, Accuracy) to measure algorithm performance and conducted comparative analysis of both methods.",
   tech: ["React", "Python", "Sastrawi", "TF-IDF", "Jaccard Similarity", "Information Retrieval"],
   image: "/projects/scifind.png",
-  demo: "https://your-project.vercel.app"  // atau github
+  demo: "https://uas-pi-sci-find.vercel.app"  
 },
 {
   title: "Sirkular — Circular Economy Platform for UMKM",
