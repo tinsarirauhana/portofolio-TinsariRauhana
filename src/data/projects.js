@@ -185,7 +185,7 @@ const projects = [
       "https://colab.research.google.com/drive/1XLoMXm4icIuR2u1YJAVJmBcj-pFecC5P?usp=sharing",
     figma: null,
     github: null,
-    demo: null,
+    demo: "https://www.canva.com/design/DAGmBEmZdg8/lUbjnEC51bkgxoeQEXCtVA/edit?utm_content=DAGmBEmZdg8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   },
 ];
 
