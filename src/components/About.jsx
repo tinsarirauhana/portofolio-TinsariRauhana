@@ -50,7 +50,7 @@ const About = () => {
                     <div className="text-gray-400 text-xs">Years Experience</div>
                   </div>
                   <div className="bg-gradient-to-br from-pink-500/10 to-pink-600/5 backdrop-blur-sm rounded-xl p-4 border border-pink-500/20 text-center">
-                    <div className="text-3xl font-bold text-pink-400 mb-1">5+</div>
+                    <div className="text-3xl font-bold text-pink-400 mb-1">10+</div>
                     <div className="text-gray-400 text-xs">Projects Completed</div>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const About = () => {
               <FadeInView delay={0.3} direction="left">
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-gradient-to-br from-pink-500/10 to-pink-600/5 backdrop-blur-sm rounded-xl p-4 border border-pink-500/20 text-center">
-                    <div className="text-3xl font-bold text-pink-400 mb-1">5+</div>
+                    <div className="text-3xl font-bold text-pink-400 mb-1">15+</div>
                     <div className="text-gray-400 text-xs">Certifications</div>
                   </div>
                   <div className="bg-gradient-to-br from-pink-500/10 to-pink-600/5 backdrop-blur-sm rounded-xl p-4 border border-pink-500/20 text-center">
