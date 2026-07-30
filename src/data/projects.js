@@ -187,6 +187,100 @@ const projects = [
     github: null,
     demo: "https://www.canva.com/design/DAGmBEmZdg8/lUbjnEC51bkgxoeQEXCtVA/edit?utm_content=DAGmBEmZdg8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   },
+  {
+  title: "LunarFlow",
+  description:
+    "A UI/UX prototype for a mobile menstrual cycle tracking application designed to help women monitor their reproductive health through an intuitive and user-friendly experience.",
+  fullDescription:
+    "LunarFlow is a team UI/UX design project created using Figma. The application helps users track menstrual cycles, predict upcoming periods, record symptoms, and access educational content about reproductive health. I contributed to designing the user interface and building an interactive prototype with a focus on usability and accessibility.",
+  tech: [
+    "Figma",
+    "UI/UX Design",
+    "Prototype",
+    "Design System",
+  ],
+  image: "/projects/lunarflow.png",
+  github: "https://github.com/tinsarirauhana/LunarFlow_Kelompok6_PBM",
+  figma:
+    "https://www.figma.com/design/hMc76OSGDjX9e9Uid9OMfZ/pbm?node-id=0-1&p=f",
+},
+
+{
+  title: "Voice Chatbot – STT, Gemini LLM, TTS Integration",
+  description:
+    "A voice-based chatbot that integrates Speech-to-Text, Google Gemini, and Text-to-Speech for natural conversations.",
+  fullDescription:
+    "This project is a web-based voice chatbot that enables users to interact naturally through speech. User input is converted to text using Whisper.cpp, processed by Google Gemini to generate intelligent responses, and converted back into Indonesian speech using Coqui TTS. The application is deployed with an interactive Gradio interface for real-time testing.",
+  tech: [
+    "Python",
+    "Whisper.cpp",
+    "Google Gemini API",
+    "Coqui TTS",
+    "Gradio",
+  ],
+  image: "/projects/voice-chatbot.png",
+  github:
+    "https://github.com/tinsarirauhana/UAS-Praktikum-Pemrosesan-Bahasa-Alami",
+},
+
+{
+  title:
+    "Klasifikasi Multi-Kelas Pesan SMS Spam Bahasa Indonesia Menggunakan Fine-Tuning IndoBERT dan XLM-RoBERTa",
+  description:
+    "A team NLP project for multi-class Indonesian SMS spam classification using transformer-based language models.",
+  fullDescription:
+    "This project focuses on classifying Indonesian SMS messages into multiple spam categories using IndoBERT and XLM-RoBERTa. My responsibilities included dataset collection and cleaning, text preprocessing, exploratory data analysis (EDA), stratified data splitting, class weighting, and fine-tuning the IndoBERT model.",
+  tech: [
+    "Python",
+    "PyTorch",
+    "Transformers",
+    "IndoBERT",
+    "XLM-RoBERTa",
+    "Pandas",
+    "Scikit-learn",
+  ],
+  image: "/projects/sms-spam.png",
+  github:
+    "https://github.com/tinsarirauhana/Kelompok14_FinalNLP_A.git",
+},
+
+{
+  title: "LensArthropoda",
+  description:
+    "An AI-powered web application for insect identification using computer vision and generative AI.",
+  fullDescription:
+    "LensArthropoda combines computer vision and generative AI to identify insect species from images. An EfficientNetB3 model trained on 118 insect classes performs image classification, while Google Gemini 2.5 Flash Lite with Google Search Grounding generates taxonomy, habitat, ecological roles, and scientifically verified information in real time.",
+  tech: [
+    "Python",
+    "TensorFlow",
+    "EfficientNetB3",
+    "Google Gemini API",
+    "Computer Vision",
+    "Generative AI",
+  ],
+  image: "/projects/lensarthropoda.png",
+  github:
+    "https://github.com/tinsarirauhana/LensArthropoda_Tinsari-Rauhana",
+},
+
+{
+  title: "FutsalPro - Sistem Booking Lapangan Futsal",
+  description:
+    "A Django-based web application for online futsal field reservations with an integrated admin dashboard.",
+  fullDescription:
+    "FutsalPro is a full-stack web application developed with Django for managing futsal field bookings. The platform provides online reservations, booking status tracking, customer reviews, venue management, and a comprehensive administrative dashboard with booking statistics and operational management features.",
+  tech: [
+    "Django",
+    "Python",
+    "SQLite",
+    "HTML",
+    "CSS",
+    "JavaScript",
+  ],
+  image: "/projects/futsalpro.png",
+  github:
+    "https://github.com/tinsarirauhana/2308107010038_TinsariRauhana_UASPrakPPL",
+},
 ];
 
 export default projects;
